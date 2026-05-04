@@ -71,12 +71,13 @@ export default function Reservation() {
             Reservations
           </span>
           <h2 className="font-serif text-bone text-4xl md:text-6xl leading-[1.05] mb-6">
-            Reserve your <span className="italic text-gold">table</span>
+            Save your <span className="italic text-gold">stool</span>
           </h2>
           <p className="text-bone-muted text-base md:text-lg leading-relaxed mb-8">
-            We hold tables for upto 30 guests. For larger gatherings, family
-            celebrations, or private dining, please call us directly — we love
-            planning evenings.
+            We are a tiny roadside spot — only 8 to 10 seats, open-air, kitchen
+            right next to you. Drop us your details and we'll hold a stool for
+            you. For groups larger than four, please call ahead so we can
+            arrange.
           </p>
           <div className="border border-gold/20 p-6 bg-ink-card">
             <p className="text-[10px] uppercase tracking-[0.3em] text-gold mb-3">
@@ -135,7 +136,7 @@ export default function Reservation() {
                 type="email"
               />
             </Field>
-            <Field label="Guests" icon={Users}>
+            <Field label="Guests (max 10)" icon={Users}>
               <input
                 data-testid="res-guests"
                 value={form.guests}
@@ -143,7 +144,7 @@ export default function Reservation() {
                 className="field-input"
                 type="number"
                 min={1}
-                max={30}
+                max={10}
                 required
               />
             </Field>

@@ -33,7 +33,7 @@ class ReservationCreate(BaseModel):
     email: Optional[EmailStr] = None
     date: str  # ISO date string YYYY-MM-DD
     time: str  # HH:MM
-    guests: int = Field(..., ge=1, le=30)
+    guests: int = Field(..., ge=1, le=10)
     notes: Optional[str] = Field(default="", max_length=500)
 
 

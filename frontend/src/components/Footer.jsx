@@ -23,8 +23,9 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-bone-muted text-sm leading-relaxed max-w-md">
-            A 35-year tradition of authentic, hand-crafted Chinese cuisine in the
-            heart of Amrut Nagar. Family run. Forever ours, forever yours.
+            A roadside Chinese kitchen with eight stools, one open wok, and 35
+            years of memory — right here on Amrut Nagar lane. Family run.
+            Forever ours, forever yours.
           </p>
         </div>
 

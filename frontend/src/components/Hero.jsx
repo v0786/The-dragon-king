@@ -45,9 +45,10 @@ export default function Hero() {
             className="text-bone-muted text-lg md:text-xl max-w-xl leading-relaxed mb-12 animate-fade-up"
             style={{ animationDelay: "240ms" }}
           >
-            A neighbourhood landmark in Amrut Nagar, Ghatkopar. Three and a half
-            decades of slow-simmered broths, blistering wok-fire and quiet,
-            family-run hospitality.
+            A humble roadside kitchen on the lanes of Amrut Nagar, Ghatkopar.
+            Open-air seating for ten, an open wok blazing right beside you —
+            three and a half decades of the same hands, same flame, same
+            family.
           </p>
 
           <div

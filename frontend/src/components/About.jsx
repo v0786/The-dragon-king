@@ -2,9 +2,9 @@ import { useReveal } from "../lib/useReveal";
 import { MEDIA, RESTAURANT } from "../lib/data";
 
 const stats = [
-  { value: "35", label: "Years of Heritage" },
-  { value: "120+", label: "Signature Dishes" },
-  { value: "3", label: "Generations Served" },
+  { value: "35", label: "Years on this Lane" },
+  { value: "8–10", label: "Seats, Open-Air" },
+  { value: "1", label: "Open Wok Kitchen" },
   { value: "1990", label: "Established" },
 ];
 
@@ -47,22 +47,22 @@ export default function About() {
             Our Heritage
           </span>
           <h2 className="font-serif text-bone text-4xl md:text-5xl lg:text-6xl leading-[1.05] mb-8">
-            A neighbourhood story,
+            A roadside kitchen,
             <br />
-            <span className="italic text-gold">three decades</span> in the
-            making.
+            <span className="italic text-gold">three decades</span> on the same
+            corner.
           </h2>
           <p className="text-bone-muted text-base md:text-lg leading-relaxed mb-6">
-            In 1990, on a quiet lane in Amrut Nagar, a single carbon-steel wok
-            was lit. The smoke that rose carried with it a promise — that
-            authentic, hand-crafted Chinese food belonged in every Ghatkopar
-            family's table.
+            In 1990, on a footpath in Amrut Nagar, a single carbon-steel wok was
+            lit by lantern light. No walls, no air-conditioning — just an open
+            kitchen, a couple of plastic stools and the honest crackle of fire
+            meeting oil.
           </p>
           <p className="text-bone-muted text-base md:text-lg leading-relaxed mb-12">
-            {RESTAURANT.legacy} years later, the same recipes are still
-            cooked the same way. Same broth, same heat, same hands. We have
-            watched children grow into parents, and parents into grandparents —
-            all gathered around our circular tables.
+            {RESTAURANT.legacy} years on, very little has changed. We still seat
+            only eight to ten guests at a time. The kitchen is still right
+            beside you — you can watch every dish being tossed, ladled, plated.
+            That's the whole experience: roadside, open, alive.
           </p>
 
           {/* Stats */}
