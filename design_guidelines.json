@@ -1,0 +1,90 @@
+{
+  "project_context": {
+    "domain": "Restaurant / Hospitality",
+    "theme": "Dark",
+    "archetype": "Archetype 5: Jewel & Luxury (with Traditional Chinese elements)",
+    "vibe": "Heritage, premium, warm, rustic but luxurious. Deep imperial reds, golds, ink-blacks. Avoid generic tech-SaaS styles."
+  },
+  "colors": {
+    "background": {
+      "default": "#080606", 
+      "surface": "#120B0B", 
+      "card": "#181010" 
+    },
+    "brand": {
+      "primary": "#C8102E", 
+      "secondary": "#D4AF37", 
+      "accent": "#F4E0A6"
+    },
+    "text": {
+      "primary": "#FDF5E6", 
+      "secondary": "#A89F91", 
+      "muted": "#7A7165"
+    },
+    "border": {
+      "default": "#2A1D1D",
+      "gold_subtle": "rgba(212, 175, 55, 0.2)"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "heading": "Cormorant Garamond",
+      "body": "Manrope"
+    },
+    "hierarchy": {
+      "h1": "text-5xl md:text-7xl font-medium tracking-tight font-serif text-white",
+      "h2": "text-4xl md:text-5xl font-medium tracking-tight font-serif text-brand-secondary",
+      "h3": "text-2xl md:text-3xl font-medium font-serif text-white",
+      "body": "text-base md:text-lg text-text-secondary leading-relaxed font-sans",
+      "labels": "text-xs md:text-sm uppercase tracking-[0.2em] text-brand-secondary font-sans"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Use p-8, p-12, py-24, py-32 for massive breathing room. Never cramp content. Wide gaps between sections.",
+    "grid_strategy": "Asymmetric bento for gallery. Loose two-column for About section. Center alignment for Hero and Menu.",
+    "radius": "Minimalist sharp edges. rounded-none or rounded-sm (max 2px). Do not use soft rounded corners."
+  },
+  "surfaces_and_micro_themes": {
+    "header": "Crystal glassmorphism: bg-background-default/80 backdrop-blur-xl border-b border-white/5. Sticky on top with z-50.",
+    "cards": "Subtle textured cards. border border-border-gold_subtle bg-background-surface. Add subtle drop-shadow on hover.",
+    "buttons": {
+      "primary": "bg-brand-primary text-white border border-brand-primary hover:bg-brand-primary/80 transition-all rounded-sm px-6 py-3 font-medium",
+      "secondary": "bg-transparent text-brand-secondary border border-brand-secondary hover:bg-brand-secondary hover:text-black transition-all rounded-sm px-6 py-3 font-medium"
+    }
+  },
+  "components": {
+    "forms": "Use Shadcn elements heavily customized. Input: bg-background-surface border-border-default focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary text-white.",
+    "menu_items": "Use pure HTML/Tailwind. Flex container with item name (left), flex-grow border-b-2 border-dotted border-border-default mx-4 (middle), and price in gold (right).",
+    "animations": "Lenis smooth scrolling (MANDATORY). Framer motion 'fade in up' for sections as they enter viewport. Subtle scale-up on gallery images on hover."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/13f8edd9-2921-446b-b4a6-9d5bb0efa15d/images/92c1c6f51222b76c651e13bdf678c689f38d5bd10d70b19c8bf4557bb0a44975.png",
+      "description": "Luxurious traditional Chinese restaurant interior for the hero section background. MUST USE bg-black/60 overlay to ensure text readability."
+    },
+    "texture_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/13f8edd9-2921-446b-b4a6-9d5bb0efa15d/images/8a612c6f0ef4fbbae2ac172175540e17c17325571a84069cd146b808e6109ab5.png",
+      "description": "Textured rustic Chinese rice paper background in dark charcoal. Use as background for the 'Menu' or 'Reservation' sections to break the solid black."
+    },
+    "about_image": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/13f8edd9-2921-446b-b4a6-9d5bb0efa15d/images/c71acf8d081c18ee91b33d9cc0604797ae4f647a474208a81d33d1d76ae83203.png",
+      "description": "Master chef tossing flaming wok. Use in the 'About / 35 Year Legacy' section as a large visual anchor."
+    },
+    "gallery": [
+      "https://images.unsplash.com/photo-1596463302369-e74d01db0c33?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZm9vZCUyMGRpbSUyMHN1bXxlbnwwfHx8fDE3Nzc5MDE5ODV8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1678026582164-24a5460c447a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwyfHxjaGluZXNlJTIwZm9vZCUyMGRpbSUyMHN1bXxlbnwwfHx8fDE3Nzc5MDE5ODV8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1759893497863-c90a6dfa7a86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxjaGluZXNlJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwbGFudGVybnN8ZW58MHx8fHwxNzc3OTAxOTg1fDA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install the required font families from Google Fonts (Cormorant Garamond and Manrope) in the global CSS or index.html.",
+    "Install and configure 'lenis' for smooth scrolling.",
+    "Install 'framer-motion' for staggered entrance animations and hover effects.",
+    "Install 'lucide-react' for all iconography.",
+    "Do NOT use pre-built Shadcn Cards for main marketing sections; build custom HTML bento grids and asymmetric layouts to keep the design fluid and premium.",
+    "Use Shadcn components solely for the Form logic (Reservation Form) to ensure accessibility, but override styles to match the dark heritage theme.",
+    "For the Contact section map, embed a standard Google Maps iframe for 'Amrut Nagar, Ghatkopar, Mumbai'.",
+    "Configure tailwind.config.js with the provided colors (e.g., brand-primary, brand-secondary) and font families (serif, sans).",
+    "Include 'data-testid' attributes on all interactive elements (buttons, form inputs, nav links) for testing."
+  ]
+}
